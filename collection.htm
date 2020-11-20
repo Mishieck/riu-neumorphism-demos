@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RIU Neumorphism - collection</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    [riu-neu]:not(div) {
+      width: calc(128px * 3 + 64px * 4);
+      height: 100%;
+      padding: 64px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 64px;
+      background-color: #e0e7e0;
+    }
+
+    [riu-neu] > * {
+      width: 128px;
+      height: 128px;
+    }
+  </style>
+</head>
+<body>
+
+  <main riu-neu="collection top-right radius(2rem)">
+    <div></div>
+    <div></div>
+    <div></div>
+  </main>
+
+	<script type="module" src="/assets/js/riu-neumorphism/lib/riu-neumorphism.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RIU Neumorphism - Neumorphism Grid</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    #neumorphic-grid {
+      width: calc(128px * 5 + 64px * 6);
+      height: 100%;
+      padding: 64px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 64px;
+      background-color: #e0e7e0;
+    }
+
+    #neumorphic-grid > * {
+      width: 128px;
+      height: 128px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    code {
+      padding: 0.25rem;
+      color: #306730;
+    }
+  </style>
+</head>
+<body>
+
+  <main id="neumorphic-grid">
+    <div riu-neu="xs">
+      <code>xs</code>
+      <code>outer</code>
+      <code>flat</code>
+    </div>
+    <div riu-neu="sm">
+      <code>sm</code>
+      <code>outer</code>
+      <code>flat</code>
+    </div>
+    <div riu-neu="md">
+      <code>md</code>
+      <code>outer</code>
+      <code>flat</code>
+    </div>
+    <div riu-neu="lg">
+      <code>lg</code>
+      <code>outer</code>
+      <code>flat</code>
+    </div>
+    <div riu-neu="xl">
+      <code>xl</code>
+      <code>outer</code>
+      <code>flat</code>
+    </div>
+
+    <div riu-neu="xs convex">
+      <code>xs</code>
+      <code>outer</code>
+      <code>convex</code>
+    </div>
+    <div riu-neu="sm convex">
+      <code>sm</code>
+      <code>outer</code>
+      <code>convex</code>
+    </div>
+    <div riu-neu="md convex">
+      <code>md</code>
+      <code>outer</code>
+      <code>convex</code>
+    </div>
+    <div riu-neu="lg convex">
+      <code>lg</code>
+      <code>outer</code>
+      <code>convex</code>
+    </div>
+    <div riu-neu="xl convex">
+      <code>xl</code>
+      <code>outer</code>
+      <code>convex</code>
+    </div>
+
+    <div riu-neu="xs concave">
+      <code>xs</code>
+      <code>outer</code>
+      <code>concave</code>
+    </div>
+    <div riu-neu="sm concave">
+      <code>sm</code>
+      <code>outer</code>
+      <code>concave</code>
+    </div>
+    <div riu-neu="md concave">
+      <code>md</code>
+      <code>outer</code>
+      <code>concave</code>
+    </div>
+    <div riu-neu="lg concave">
+      <code>lg</code>
+      <code>outer</code>
+      <code>concave</code>
+    </div>
+    <div riu-neu="xl concave">
+      <code>xl</code>
+      <code>outer</code>
+      <code>concave</code>
+    </div>
+
+    <div riu-neu="xs inner">
+      <code>xs</code>
+      <code>inner</code>
+      <code>flat</code>
+    </div>
+    <div riu-neu="sm inner">
+      <code>sm</code>
+      <code>inner</code>
+      <code>flat</code>
+    </div>
+    <div riu-neu="md inner">
+      <code>md</code>
+      <code>inner</code>
+      <code>flat</code>
+    </div>
+    <div riu-neu="lg inner">
+      <code>lg</code>
+      <code>inner</code>
+      <code>flat</code>
+    </div>
+    <div riu-neu="xl inner">
+      <code>xl</code>
+      <code>inner</code>
+      <code>flat</code>
+    </div>
+
+    <div riu-neu="xs inner convex">
+      <code>xs</code>
+      <code>inner</code>
+      <code>convex</code>
+    </div>
+    <div riu-neu="sm inner convex">
+      <code>sm</code>
+      <code>inner</code>
+      <code>convex</code>
+    </div>
+    <div riu-neu="md inner convex">
+      <code>md</code>
+      <code>inner</code>
+      <code>convex</code>
+    </div>
+    <div riu-neu="lg inner convex">
+      <code>lg</code>
+      <code>inner</code>
+      <code>convex</code>
+    </div>
+    <div riu-neu="xl inner convex">
+      <code>xl</code>
+      <code>inner</code>
+      <code>convex</code>
+    </div>
+
+    <div riu-neu="xs inner concave">
+      <code>xs</code>
+      <code>inner</code>
+      <code>concave</code>
+    </div>
+    <div riu-neu="sm inner concave">
+      <code>sm</code>
+      <code>inner</code>
+      <code>concave</code>
+    </div>
+    <div riu-neu="md inner concave">
+      <code>md</code>
+      <code>inner</code>
+      <code>concave</code>
+    </div>
+    <div riu-neu="lg inner concave">
+      <code>lg</code>
+      <code>inner</code>
+      <code>concave</code>
+    </div>
+    <div riu-neu="xl inner concave">
+      <code>xl</code>
+      <code>inner</code>
+      <code>concave</code>
+    </div>
+  </main>
+
+	<script type="module" src="/assets/js/riu-neumorphism/lib/riu-neumorphism.js"></script>
+</body>
+</html>
+
+
+

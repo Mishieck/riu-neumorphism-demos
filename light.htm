@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RIU Neumorphism - Light Source Positions</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    #container {
+      padding: 64px;
+      width: calc(128px * 3 + 64px * 5);
+      height: calc(128px * 3 + 64px * 5);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 64px;
+      background-color: #e0e7e0;
+    }
+
+    #container > * {
+      width: 128px;
+      height: 128px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    code {
+      padding: 0.25rem;
+      color: #306730;
+    }
+
+    #title {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.5rem;
+      text-align: center;
+      color: #306730;
+    }
+  </style>
+</head>
+<body>
+
+  <main id="container">
+    <div riu-neu="">
+      <code>top-left</code>
+    </div>
+    <div riu-neu="top-center">
+      <code>top-center</code>
+    </div>
+    <div riu-neu="top-right">
+      <code>top-right</code>
+    </div>
+    <div riu-neu="center-left">
+      <code>center-left</code>
+    </div>
+    <div id="title">
+      <span>Light</span>
+      <span>Source</span>
+      <span>Positions</span>
+    </div>
+    <div riu-neu="center-right">
+      <code>center-right</code>
+    </div>
+    <div riu-neu="bottom-left">
+      <code>bottom-left</code>
+    </div>
+    <div riu-neu="bottom-center">
+      <code>bottom-center</code>
+    </div>
+    <div riu-neu="bottom-right">
+      <code>bottom-right</code>
+    </div>
+  </main>
+
+	<script type="module" src="/assets/js/riu-neumorphism/lib/riu-neumorphism.js"></script>
+</body>
+</html>
+
+
+

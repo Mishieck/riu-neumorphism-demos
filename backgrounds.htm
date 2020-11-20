@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RIU Neumorphism - Backgrounds</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    #container {
+      width: calc(128px * 6 + 64px * 7);
+      height: calc((128px + 64px * 2) * 5);
+      display: grid;
+      grid-template-columns: 1fr;
+      background-color: #e0e7e0;
+    }
+
+    [riu-neu] {
+      width: 128px;
+      height: 128px;
+    }
+
+    .group {
+      padding: 64px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .group:nth-child(1) {
+      background-color: #e7e7e7;
+    }
+
+    .group:nth-child(2) {
+      background-color: #bfbfbf;
+    }
+
+    .group:nth-child(3) {
+      background-color: #808080;
+    }
+
+    .group:nth-child(4) {
+      background-color: #404040;
+    }
+
+    .group:nth-child(5) {
+      background-color: #181818;
+    }
+  </style>
+</head>
+<body>
+
+  <main id="container">
+    <div class="group">
+      <div riu-neu=""></div>
+      <div riu-neu="convex"></div>
+      <div riu-neu="concave"></div>
+      <div riu-neu="inner"></div>
+      <div riu-neu="inner convex"></div>
+      <div riu-neu="inner concave"></div>
+    </div>
+    <div class="group">
+      <div riu-neu=""></div>
+      <div riu-neu="convex"></div>
+      <div riu-neu="concave"></div>
+      <div riu-neu="inner"></div>
+      <div riu-neu="inner convex"></div>
+      <div riu-neu="inner concave"></div>
+    </div>
+    <div class="group">
+      <div riu-neu=""></div>
+      <div riu-neu="convex"></div>
+      <div riu-neu="concave"></div>
+      <div riu-neu="inner"></div>
+      <div riu-neu="inner convex"></div>
+      <div riu-neu="inner concave"></div>
+    </div>
+    <div class="group">
+      <div riu-neu=""></div>
+      <div riu-neu="convex"></div>
+      <div riu-neu="concave"></div>
+      <div riu-neu="inner"></div>
+      <div riu-neu="inner convex"></div>
+      <div riu-neu="inner concave"></div>
+    </div>
+    <div class="group">
+      <div riu-neu=""></div>
+      <div riu-neu="convex"></div>
+      <div riu-neu="concave"></div>
+      <div riu-neu="inner"></div>
+      <div riu-neu="inner convex"></div>
+      <div riu-neu="inner concave"></div>
+    </div>
+  </main>
+
+	<script type="module">
+    import { riuNeumorphism } from "/node_modules/riu-neumorphism/src/riu-neumorphism.js";
+    riuNeumorphism();
+  </script>
+</body>
+</html>
+
+
+

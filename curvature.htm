@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RIU Neumorphism - Curvature</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    #container {
+      padding: 64px;
+      width: calc(144px * 3 + 64px * 5);
+      height: calc(144px * 3 + 64px * 5);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 64px;
+      background-color: #e0e7e0;
+    }
+
+    #container > * {
+      width: 144px;
+      height: 144px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    code {
+      padding: 0.25rem;
+      color: #306730;
+    }
+
+    #title {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.5rem;
+      color: #306730;
+    }
+  </style>
+</head>
+<body>
+
+  <main id="container">
+    <div riu-neu="convex curvature(top-left, 8)">
+      <code>convex</code>
+      <code>(top-left, 8)</code>
+    </div>
+    <div riu-neu="concave top-center curvature(top-center, 16)">
+      <code>concave</code>
+      <code>(top-center, 16)</code>
+    </div>
+    <div riu-neu="convex top-right curvature(top-right, 32)">
+      <code>convex</code>
+      <code>(top-right, 32)</code>
+    </div>
+    <div riu-neu="concave center-left curvature(center-left, 16)">
+      <code>concave</code>
+      <code>(center-left, 16)</code>
+    </div>
+    <div id="title">Curvature</div>
+    <div riu-neu="convex center-right curvature(center-right, 16)">
+      <code>convex</code>
+      <code>(center-right, 16)</code>
+    </div>
+    <div riu-neu="concave bottom-left curvature(bottom-left, 8)">
+      <code>concave</code>
+      <code>(bottom-left, 8)</code>
+    </div>
+    <div riu-neu="convex bottom-center curvature(bottom-center, 16)">
+      <code>convex</code>
+      <code>(bottom-center, 16)</code>
+    </div>
+    <div riu-neu="concave bottom-right curvature(bottom-right, 32)">
+      <code>concave</code>
+      <code>(bottom-right, 32)</code>
+    </div>
+  </main>
+
+	<script type="module" src="/assets/js/riu-neumorphism/lib/riu-neumorphism.js"></script>
+</body>
+</html>
+
+
+

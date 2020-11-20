@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RIU Neumorphism - Opacities</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    #container {
+      padding: 64px;
+      width: calc(128px * 2 + 64px * 3);
+      height: 256px;
+      display: flex;
+      justify-content: space-between;
+      background-color: #e0e7e0;
+    }
+
+    [riu-neu] {
+      width: 128px;
+      height: 128px;
+    }
+  </style>
+</head>
+<body>
+
+  <main id="container">
+    <div riu-neu="opacities(1, 0.9)"></div>
+    <div riu-neu="opacities(0.4, 0.1) colors(255 255 255, 0 0 0)"></div>
+  </main>
+
+	<script type="module" src="/assets/js/riu-neumorphism/lib/riu-neumorphism.js"></script>
+</body>
+</html>
+
+
+
